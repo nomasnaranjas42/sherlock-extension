@@ -1,0 +1,12 @@
+.movie-tooltip {
+  position: absolute;
+  background: #141414;
+  color: white;
+  padding: 10px 14px;
+  border-radius: 10px;
+  max-width: 300px;
+  font-size: 13px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+  z-index: 999999;
+}
+
