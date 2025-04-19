@@ -2,19 +2,31 @@
   "manifest_version": 3,
   "name": "Sherlock",
   "version": "1.0",
-  "description": "Displays movie & TV show info on hover (IMDB rating, type, seasons, genres, etc.)",
-  "permissions": ["storage", "scripting"],
+  "description": "Hover over movie or TV show titles to reveal ratings, type, seasons, episodes, and genres using TMDB.",
+  "permissions": ["activeTab", "scripting", "storage"],
   "host_permissions": ["<all_urls>"],
   "action": {
-    "default_popup": "settings.html",
-    "default_icon": "icons/icon.png"
+    "default_icon": {
+      "16": "icons/sherlock-16.png",
+      "48": "icons/sherlock-48.png",
+      "128": "icons/sherlock-128.png"
+    },
+    "default_title": "Sherlock",
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
   },
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["content.js"],
-      "css": ["styles.css"]
+      "js": ["content.js"]
     }
-  ]
+  ],
+  "icons": {
+    "16": "icons/sherlock-16.png",
+    "48": "icons/sherlock-48.png",
+    "128": "icons/sherlock-128.png"
+  },
+  "options_page": "options.html"
 }
-
