@@ -1,4 +1,4 @@
-const TMDB_API_KEY = "your_tmdb_api_key"; // Replace this with your real TMDB API key
+const TMDB_API_KEY = "c462d9a8feb2ed4ee786586e3c0961fa"; // Replace this with your real TMDB API key
 let sherlockEnabled = true;
 let lastHoveredTitle = "";
 
