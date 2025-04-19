@@ -11,22 +11,18 @@
       "48": "icons/sherlock-48.png",
       "128": "icons/sherlock-128.png"
     },
-    "default_title": "Sherlock",
-    "default_popup": "popup.html"
+    "default_title": "Sherlock"
   },
-  "background": {
-    "service_worker": "background.js"
-  },
-  "content_scripts": [
-    {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"]
-    }
-  ],
   "icons": {
     "16": "icons/sherlock-16.png",
     "48": "icons/sherlock-48.png",
     "128": "icons/sherlock-128.png"
   },
-  "options_page": "options.html"
+  "options_page": "options.html",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
 }
