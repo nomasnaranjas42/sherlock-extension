@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sherlock Options</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 500px;
+      margin: 40px auto;
+      padding: 20px;
+      border: 1px solid #ccc;
+      border-radius: 12px;
+    }
+    h1 {
+      font-size: 1.5em;
+      margin-bottom: 1em;
+    }
+    label {
+      display: block;
+      margin: 1em 0 0.5em;
+      font-weight: bold;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 8px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 1em;
+      padding: 10px 16px;
+      border: none;
+      border-radius: 6px;
+      background-color: #007bff;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
+</head>
+<body>
+  <h1>Sherlock Extension Settings</h1>
+
+  <label for="apiKey">TMDB API Key</label>
+  <input type="text" id="apiKey" placeholder="Enter your TMDB API key" />
+
+  <label>
+    <input type="checkbox" id="enableToggle" />
+    Enable Sherlock on movie sites
+  </label>
+
+  <button id="saveBtn">Save Settings</button>
+  <p id="status" style="margin-top:10px;"></p>
+
+  <script src="options.js"></script>
+</body>
+</html>
+
